@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default async function Home() {
   const froguins = await sql`SELECT * FROM froguins`;
-
+  console.log("hello");
   return (
     <div>
       <h1>Froguins</h1>
