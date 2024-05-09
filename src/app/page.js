@@ -1,6 +1,6 @@
-
+import { sql } from "@vercel/postgres";
 export default async function Home() {
-  const froguins = await sql `SELECT * FROM froguins`
+  const froguins = await sql`SELECT * FROM froguins`;
   return (
     <div>
       <h1>People</h1>
@@ -11,6 +11,5 @@ export default async function Home() {
       <h3>Howard</h3>
       <p>What a strange name</p>
     </div>
-  )
+  );
 }
-
