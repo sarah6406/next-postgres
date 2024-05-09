@@ -1,4 +1,4 @@
-import {sql} from "@vercel/postgres"
+
 export default async function Home() {
   const froguins = await sql `SELECT * FROM froguins`
   return (
